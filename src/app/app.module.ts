@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TextDifferenceComponent } from './text-difference/text-difference.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TextDifferenceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<h2>Deleted</h2>
+<div *ngFor="let result of results">
+  <h3>Original</h3>
+  <div>{{result.original}}</div>
+  <p>Changed</p>
+  <div>{{result.changed}}</div>
+  <p>Deleted</p>
+  <div>
+    <span [ngClass]="t.type" *ngFor="let t of result.deleted">{{t.text}}</span>
+  </div>
+  <p>Added</p>
+  <div>
+    <span [ngClass]="t.type" *ngFor="let t of result.added">{{t.text}}</span>
+  </div>
+  <p>Combined</p>
+  <div>
+    <span [ngClass]="t.type" *ngFor="let t of result.combined">{{t.text}}</span>
+  </div>
+</div>
+
+<pre>
+  {{results | json }}
+</pre>
+
